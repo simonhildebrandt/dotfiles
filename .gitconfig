@@ -1,0 +1,9 @@
+[user]
+	name = Simon Hildebrandt
+	email = simonhildebrandt@gmail.com
+[color]
+	ui = true
+[push]
+  default = current
+[core]
+	excludesfile = ~/.gitignore_global
