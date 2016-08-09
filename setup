@@ -1,1 +1,19 @@
-# Chrome, iTerm2, Dropbox, XCode command-line tools, Homebrew, Hammerspoon, RVM, Atom
+#!/bin/bash
+
+defaults write com.apple.finder AppleShowAllFiles YES
+
+xcode-select --install
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install bash-git-prompt
+
+brew tap caskroom/cask
+
+brew cask install google-chrome dropbox hammerspoon atom iterm2
+
+ln -s ~/dotfiles/init.lua ~/.hammerspoon
+ln -s ~/dotfiles/.gitconfig ~/dotfiles/.gitignore ~/
+
+# Inject Postgres.app bin path
+echo "export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" > ~/.profile

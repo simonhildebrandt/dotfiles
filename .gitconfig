@@ -24,9 +24,9 @@
 [branch]
 	autosetuprebase = always
 [init]
-	templatedir = /Users/simon.hildebrandt/githooks/githooks_bootstrap
+	templatedir = ~/githooks/githooks_bootstrap
 [hooks]
-	symlinksourcerepo = /Users/simon.hildebrandt/githooks
+	symlinksourcerepo = ~/githooks
 	require-strict-paren-spacing = false
 [filter "lfs"]
 	clean = git-lfs clean %f
