@@ -57,3 +57,13 @@ end
 local wf=hs.window.filter
 wf_chrome = wf.new{'Google Chrome'}
 wf_chrome:subscribe(wf.windowFocused,takeScreenshot)
+
+function inkscapeFixer(appName, eventType, appObject)
+  if ((eventType == hs.application.watcher.launched) and (appName == 'Inkscape')) then
+    hs.alert.show(appName)
+    hs.layout.apply({{appObject, nil, hs.screen.mainScreen(), hs.layout.maximized, nil, nil}})
+  end
+end
+
+local appWatcher = hs.application.watcher.new(inkscapeFixer)
+appWatcher:start()
