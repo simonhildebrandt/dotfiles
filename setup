@@ -1,6 +1,9 @@
 #!/bin/bash
 
 defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.dock pinning -string start
+defaults write com.apple.dock persistent-apps -array
+sudo killall Dock
 
 xcode-select --install
 
