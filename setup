@@ -13,7 +13,7 @@ brew install bash-git-prompt
 
 brew tap caskroom/cask
 
-brew cask install google-chrome dropbox hammerspoon atom iterm2 vlc xquartz inkscape
+brew cask install google-chrome dropbox hammerspoon atom iterm2 vlc xquartz inkscape flycut
 
 ln -s ~/dotfiles/init.lua ~/.hammerspoon
 ln -s ~/dotfiles/.gitconfig ~/dotfiles/.gitignore ~/
