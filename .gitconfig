@@ -23,11 +23,6 @@
   dc = diff --cached
 [branch]
 	autosetuprebase = always
-[init]
-	templatedir = ~/githooks/githooks_bootstrap
-[hooks]
-	symlinksourcerepo = ~/githooks
-	require-strict-paren-spacing = false
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
