@@ -13,10 +13,13 @@ brew install bash-git-prompt
 
 brew tap caskroom/cask
 
-brew cask install google-chrome dropbox hammerspoon atom iterm2 vlc xquartz inkscape flycut
+brew cask install google-chrome atom iterm2 vlc xquartz inkscape flycut
+# dropbox hammerspoon
 
-ln -s ~/dotfiles/init.lua ~/.hammerspoon
 ln -s ~/dotfiles/.gitconfig ~/dotfiles/.gitignore ~/
+ln -s ~/dotfiles/.bash_profile ~/
+
+#ln -s ~/dotfiles/init.lua ~/.hammerspoon
 
 # Inject Postgres.app bin path
-echo "export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" > ~/.profile
+#echo "export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" > ~/.profile
