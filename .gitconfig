@@ -21,6 +21,7 @@
   br = branch
   diff = diff --word-diff
   dc = diff --cached
+  upstream = !git push -u origin HEAD
 [branch]
 	autosetuprebase = always
 [filter "lfs"]
