@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Integrate these:
+#osx_defaults:
+#  - { domain: 'com.apple.dock',          key: 'autohide',                type: boolean, value: true }
+#  - { domain: "com.apple.dock",          key: "autohide-time-modifier",  type: int,     value: 0 }
+#  - { domain: "com.apple.dock",          key: "autohide-delay",          type: int,     value: 0 }
+
 defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.dock pinning -string start
 defaults write com.apple.dock persistent-apps -array
