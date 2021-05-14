@@ -19,8 +19,8 @@ brew install bash-git-prompt nvm
 
 brew tap homebrew/cask
 
-brew cask install google-chrome atom iterm2 vlc xquartz inkscape flycut smoothscroll
-# dropbox hammerspoon
+brew cask install google-chrome vscode iterm2 flycut
+# dropbox hammerspoon xquartz inkscape vlc smoothscroll
 
 ln -s ~/dotfiles/.gitconfig ~/dotfiles/.gitignore ~/
 ln -s ~/dotfiles/.bash_profile ~/
