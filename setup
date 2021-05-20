@@ -1,5 +1,6 @@
 #!/bin/bash
 
+defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.finder AppleShowAllFiles YES
 defaults write com.apple.dock pinning -string start
 defaults write com.apple.dock persistent-apps -array
