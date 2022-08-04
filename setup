@@ -25,4 +25,4 @@ ln -s ~/dotfiles/.bash_profile ~/
 #ln -s ~/dotfiles/init.lua ~/.hammerspoon
 
 # Inject Postgres.app bin path
-#echo "export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" > ~/.profile
+#echo "export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" >> ~/.zshrc
