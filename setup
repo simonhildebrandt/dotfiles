@@ -12,12 +12,8 @@ xcode-select --install
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install bash-git-prompt nvm
-
-brew tap homebrew/cask
-
-brew cask install google-chrome visual-studio-code iterm2 flycut
-# dropbox hammerspoon xquartz inkscape vlc smoothscroll
+brew cask install google-chrome visual-studio-code iterm2 flycut starship
+# dropbox hammerspoon xquartz inkscape vlc smoothscroll unity-hub
 
 ln -s ~/dotfiles/.gitconfig ~/dotfiles/.gitignore ~/
 ln -s ~/dotfiles/.bash_profile ~/
