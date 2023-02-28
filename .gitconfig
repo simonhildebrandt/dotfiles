@@ -1,27 +1,28 @@
 [user]
-  name = Simon Hildebrandt
-  email = simonhildebrandt@gmail.com
+	name = Simon Hildebrandt
+	email = simonhildebrandt@gmail.com
 [color]
-  ui = true
+	ui = true
 [push]
-  default = current
+	default = current
 [core]
-  excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore_global
+	editor = code --wait
 [alias]
-  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-  le = log --oneline --decorate
-  fl = log -u
-  cp = cherry-pick
-  st = status -s
-  cl = clone
-  ci = commit
-  co = checkout
-  br = branch
-  diff = diff --word-diff
-  dc = diff --cached
-  upstream = !git push -u origin HEAD
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	le = log --oneline --decorate
+	fl = log -u
+	cp = cherry-pick
+	st = status -s
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	diff = diff --word-diff
+	dc = diff --cached
+	upstream = !git push -u origin HEAD
 [branch]
 	autosetuprebase = always
 [filter "lfs"]
